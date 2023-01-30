@@ -1,0 +1,21 @@
+.fw-bold {
+    font-weight: bolder;
+}
+
+.m-3 {
+    margin: 3em;
+}
+
+.font-calibri {
+    font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+}
+
+.img-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.me-2 {
+    margin-right: 2em;
+}

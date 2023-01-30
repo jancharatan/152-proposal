@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <div class="m-3 font-calibri">
+        <h1 class="fw-bold">Re-Implementation of He et al.</h1>
+
+        <h3 class="fw-bold">Description</h3>
+        For my class project, I propose doing a re-implementation of the paper
+        "Masked Autoencoders Are Scalable Vision Learners" by He et al. A masked
+        autoencoder removes a portion of some type of data and learns how to
+        predict the removed content. GPT and BERT apply this method in natural
+        language processing and this paper applies the technique in computer
+        vision. The methodology of this paper involves taking in training images
+        and masking out some percentage of segments. The visible segments are
+        then encoded with information about what is contained and the position.
+        From there, a decoder takes in these encoded images and predicts the
+        gestalt of new masked out images. The paper also goes into more detail
+        about training various models with slightly tweaked methods and
+        comparing the MAE method to other ones. The first image shows the basic
+        process for the masked autoencoder. The second image shows what the
+        final model produces for various masked outputs next to the original
+        image.
+
+        <h3 class="fw-bold">Goals</h3>
+        <ul>
+            <li>
+                Understand the methods outlined in this paper and create a list
+                of steps needed for re-implementation.
+            </li>
+            <li>
+                Train a Neural Network using the optimal parameters so that is
+                able to plausibly reconstruct images that the model has not
+                previously seen.
+            </li>
+            <li>
+                Stretch goal: train more neural networks to explore the
+                tradeoffs between things like percentage masked and the output
+                of the model.
+            </li>
+        </ul>
+
+        <div class="img-wrap">
+            <div class="me-2">
+                <h3 class="fw-bold">Figure 1: The Method Used by this Paper</h3>
+                <img height="200px" src="assets/process.png" />
+            </div>
+
+            <div>
+                <h3 class="fw-bold">Figure 2: Examples of the Outputs</h3>
+                <img height="200px" src="assets/examples.png" />
+            </div>
+        </div>
+    </div>
+</html>
